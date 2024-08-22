@@ -1,6 +1,8 @@
 # Related Posts for WeDevs Assignment
 
-[Related Posts](https://mostafiz.netlify.app/).
+For Better Experience You have to active Twenty Twenty-Four WordPress Theme
+
+[Related Posts WordPress Plugin](https://mostafiz.netlify.app/).
 
 ## Description Related Posts Plugin
 

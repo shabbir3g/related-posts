@@ -1,12 +1,19 @@
 (function ($) {
   "use strict";
 
-  $(".wp-block-post-content").removeClass("is-layout-constrained");
-
   $(document).ready(function () {
+    /*
+     * remove Class which is make layout small in theme.
+     */
+    $(".wp-block-post-content").removeClass("is-layout-constrained");
+
+    /*
+     * Add WP Carousel slider Code
+     */
+
     $(".related-posts-container.owl-carousel").owlCarousel({
       loop: true,
-      //   autoplay: true,
+      autoplay: true,
       margin: 5,
       responsiveClass: true,
       nav: false,

@@ -1,14 +1,18 @@
 # Related Posts for WeDevs Assignment
 
-For Better Experience You have to active Twenty Twenty-Four WordPress Theme
-
 [Related Posts WordPress Plugin](https://mostafiz.netlify.app/).
+
+For Better Experience You have to active Twenty Twenty-Four WordPress Theme
 
 ## Description Related Posts Plugin
 
-Related Posts for WordPress offers you the ability to link related posts to each other with just 1 click!
+- Related Posts for WordPress offers you the ability to link related posts to each other with just 1 click!
 
-Our installation wizard will do all the hard work for you, simply activate the plugin.
+- Our installation wizard will do all the hard work for you, simply activate the plugin.
+
+- After Active This plugin, you can see "Realated Posts" Title after Single post content.
+
+- Below Single post content you can see Owl Carousel slider which is show 5 posts which posts are same category.
 
 ## About Related Posts for WordPress
 

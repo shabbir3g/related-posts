@@ -22,17 +22,13 @@
  if ( ! defined( 'ABSPATH' ) ) {
     exit; 
  }  
-
+ 
+ require_once(ABSPATH . 'wp-admin/includes/plugin.php');
  /*
   * The Main Plugin Class
   */
 
  final class Related_Posts{
-
-    /*
-    * class constructor function
-    */
-    private static $version = '1.0.0';
 
     /*
     * class constructor function
@@ -59,7 +55,11 @@
     */
 
     private function define_constants(){
-        define( 'RELATED_POSTS_VERSION', self::$version );
+        $plugin_data = get_plugin_data( __FILE__);
+
+        $version = $plugin_data['Version'];
+
+        define( 'RELATED_POSTS_VERSION', $version );
         define( 'RELATED_POSTS_FILE', __FILE__ );
         define( 'RELATED_POSTS_PATH', __DIR__ );
         define( 'RELATED_POSTS_URL', plugins_url( '', RELATED_POSTS_FILE ) );
@@ -76,8 +76,6 @@
 
     public function related_posts_enqueue(){
 
-
-
         wp_enqueue_style( 'related-posts', RELATED_POSTS_ASSETS . '/css/related-posts.css', [], RELATED_POSTS_VERSION );
 
         wp_enqueue_style( 'related-owl.carousel', RELATED_POSTS_ASSETS . '/owlcarousel/assets/owl.carousel.min.css', [], RELATED_POSTS_VERSION );
@@ -87,6 +85,7 @@
         wp_enqueue_script( 'related-owl.carouseljs', RELATED_POSTS_ASSETS . '/owlcarousel/owl.carousel.min.js', [ 'jquery' ], RELATED_POSTS_VERSION, true );
 
         wp_enqueue_script( 'related-posts-js', RELATED_POSTS_ASSETS . '/js/related-posts.js', [ 'jquery' ], RELATED_POSTS_VERSION, true );
+
     }
 
 
